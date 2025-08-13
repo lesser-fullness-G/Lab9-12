@@ -1,5 +1,6 @@
 name: Deploy to GitHub Pages
 # 添加 workflow 权限
+
 permissions:
   contents: write
   pages: write
@@ -7,6 +8,7 @@ permissions:
   actions: write
   security-events: write
   statuses: write
+  
 on:
   push:
     branches:
@@ -36,6 +38,3 @@ jobs:
       with:
         branch: gh-pages
         folder: dist
-
-permissions:
-  contents: write
